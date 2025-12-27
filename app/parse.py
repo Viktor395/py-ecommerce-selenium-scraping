@@ -140,7 +140,8 @@ def scrape_single_page(driver: webdriver.Chrome,
 
     long_wait.until(expected_conditions.presence_of_all_elements_located(
         (By.CSS_SELECTOR, product_cards_selector)))
-    product_elements = driver.find_elements(By.CSS_SELECTOR,product_cards_selector)
+    product_elements = driver.find_elements(By.CSS_SELECTOR,
+                                            product_cards_selector)
 
 
     products = []
