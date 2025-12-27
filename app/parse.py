@@ -179,12 +179,12 @@ def scrape_single_page(driver: webdriver.Chrome,
                 num_of_reviews = 0
 
                 products.append(Product(
-                title=title,
-                description=description,
-                price=price,
-                rating=rating_int,
-                num_of_reviews=num_of_reviews,
-            ))
+                    title=title,
+                    description=description,
+                    price=price,
+                    rating=rating_int,
+                    num_of_reviews=num_of_reviews,
+                ))
 
         except NoSuchElementException:
             continue
